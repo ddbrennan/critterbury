@@ -1,4 +1,4 @@
-export default COMIC_INFO = [
+export const COMIC_INFO = [
   {
     title: "God, What An Asshole!",
     img: "https://s3.us-east-2.amazonaws.com/critterbury/comics/01-bible1.png",
@@ -26,17 +26,20 @@ export default COMIC_INFO = [
   {
     title: "More Like Sin-Bad At Sailing!",
     img: "https://s3.us-east-2.amazonaws.com/critterbury/comics/05-arabiannights2.png",
-    book: "Maybe it's best to stick to stand-up."
+    book: "Arabian Nights",
+    alt: "Maybe it's best to stick to stand-up."
   },
   {
     title: "Once More With Keeling",
     img: "https://s3.us-east-2.amazonaws.com/critterbury/comics/06-arabiannights3.png",
-    book: "There's always next story."
+    book: "Arabian Nights",
+    alt: "There's always next story."
   },
   {
     title: "On Stranger Tides",
     img: "https://s3.us-east-2.amazonaws.com/critterbury/comics/07-arabiannights4.png",
-    book: "Well, he tried."
+    book: "Arabian Nights",
+    alt: "Well, he tried."
   },
   {
     title: "Riddle of the Sphinxster",

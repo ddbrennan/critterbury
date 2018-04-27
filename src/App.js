@@ -1,18 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { COMIC_INFO } from './comic_info.js'
+import Comic from './Comic.js'
 
 class App extends Component {
+  state = {
+    comic: 0
+  }
+  
+  nextComic = () => {
+    let newCom = this.state.comic
+    
+    if (newCom < COMIC_INFO.length - 1) {
+      newCom += 1
+    }
+    
+    this.setState({
+      comic: newCom
+    })
+  }
+  
+  prevComic = () => {
+    let newCom = this.state.comic
+    
+    if (newCom > 0) {
+      newCom -= 1
+    }
+    
+    this.setState({
+      comic: newCom
+    })
+  }
+  
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div id="site-title">THE CRITTERBURY TALES</div>
+        <div className="content-container">
+          <div className="prev button" onClick={ this.prevComic }>PREV</div>
+          <Comic comic={ COMIC_INFO[this.state.comic] } />
+          <div className="next button" onClick={ this.nextComic }>NEXT</div>
+        </div>
       </div>
     );
   }

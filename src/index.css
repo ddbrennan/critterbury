@@ -1,5 +1,59 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  background-color: rgba(236,245,226,1);
+}
+
+.content-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(218,196,109,1);
+  position: fixed;
+  top: 50%;
+  padding: .5% 1.5%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  border: solid 5px black;
+  box-shadow: 3px 3px 3px rgba(39,33,6,.5);
+}
+
+.next {
+  right: 5%;
+}
+
+.prev {
+  left: 5%;
+}
+
+.button:hover {
+  background-color: black;
+  color: rgba(218,196,109,1);
+  cursor: pointer;
+  box-shadow: 0px 0px 0px white;
+}
+
+#site-title {
+  font-size: 3em;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  letter-spacing: .1em;
+  text-align: center;
+  margin: 2% 0;
+  color: rgba(236,245,226,1)
+}
+
+#comic-title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#comic-book {
+  font-size: 1.2em;
 }
